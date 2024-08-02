@@ -3,11 +3,11 @@ export default function Background() {
   return (
     <div className="absolute z-0 w-screen h-screen">
       <Image
-        className="h-full w-full"
+        className="h-full w-full fill object-cover"
         alt="background"
         src="/background.png"
-        layout="fill"
-        objectFit="cover"
+        width={1920}
+        height={1080}
       />
     </div>
   );
