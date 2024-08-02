@@ -60,7 +60,7 @@ export default function Rezerva() {
         </h1>
         <Modal>
           <ModalTrigger>
-            <a className="btn btn-info">Inromatii</a>
+            <a className="btn btn-info">Informatii</a>
           </ModalTrigger>
           <ModalBody className="overflow-y-visible relative z-[99] block">
             <ModalContent className="h-max prose block text-start mx-auto">
