@@ -7,7 +7,7 @@ export default function Hero() {
       <Background />
 
       <div className="hero-overlay bg-base-300 bg-opacity-80"></div>
-      <div className="hero-content text-neutral-content text-center p-2 flex flex-col sm:flex-row ">
+      <div className="hero-content text-neutral-content text-center p-2 flex flex-col sm:flex-row z-[999]">
         <Image
           width={400}
           height={400}
@@ -20,9 +20,15 @@ export default function Hero() {
           <h1 className="mb-5 text-2xl sm:text-5xl font-bold  text-base-content">
             Taberele nasturel
           </h1>
-          <p className="mb-5 text-base-content">
-            Cele mai tari tabere pentru copii
+          <p className="mb-5 text-xl sm:text-3xl text-base-content">
+            Lucram la website. Revino la 18:30 pentru o varianta actualizata.
           </p>
+          <a
+            href="https://nasturel.com"
+            className="ml-1 btn bg-gradient-to-l from-primary to-secondary text-secondary-content"
+          >
+            Inscriere tabara urbana
+          </a>
           <Link href="/contact" className="btn btn-primary">
             Contact
           </Link>
