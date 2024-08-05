@@ -45,7 +45,7 @@ export default function Page() {
       </p>
       <Link
         className="btn btn-primary text-primary-content no-underline"
-        href="/rezerva"
+        href="/"
       >
         Inapoi
       </Link>
