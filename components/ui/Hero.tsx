@@ -27,8 +27,8 @@ export default function Hero() {
             Contact
           </Link>
           <Link
-            href="/contact"
-            className=" ml-1 btn bg-gradient-to-l from-primary to-secondary text-secondary-content"
+            href="/tabara-urbana-astra/inscriere"
+            className="sm:hidden ml-1 btn bg-gradient-to-l from-primary to-secondary text-secondary-content"
           >
             Festivalul Nasturel
           </Link>
