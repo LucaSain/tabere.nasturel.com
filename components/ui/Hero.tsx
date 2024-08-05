@@ -26,6 +26,12 @@ export default function Hero() {
           <Link href="/contact" className="btn btn-primary">
             Contact
           </Link>
+          <Link
+            href="/contact"
+            className=" ml-1 btn bg-gradient-to-l from-primary to-secondary text-secondary-content"
+          >
+            Festivalul Nasturel
+          </Link>
         </div>
       </div>
       <div className="custom-shape-divider-bottom-1722860704">
