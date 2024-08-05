@@ -23,8 +23,9 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <Navbar /> */}
         <Analytics />
+        {children}
         {/* <div className="relative">
-          {children}
+          
           <div className="custom-shape-divider-bottom-1722860320">
             <svg
               data-name="Layer 1"
