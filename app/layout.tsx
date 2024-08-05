@@ -4,6 +4,7 @@ import "./globals.css";
 import Background from "../components/ui/background-astra";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <Navbar /> */}
+        <Analytics />
         <div className="relative">
           {children}
           <div className="custom-shape-divider-bottom-1722860320">
