@@ -26,12 +26,12 @@ export default function Hero() {
           <Link href="/contact" className="btn btn-primary">
             Contact
           </Link>
-          <Link
-            href="/tabara-urbana-astra/inscriere"
+          <a
+            href="https://nasturel.com"
             className="sm:hidden ml-1 btn bg-gradient-to-l from-primary to-secondary text-secondary-content"
           >
             Festivalul Nasturel
-          </Link>
+          </a>
         </div>
       </div>
       <div className="custom-shape-divider-bottom-1722860704">
