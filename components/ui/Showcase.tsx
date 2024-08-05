@@ -28,7 +28,7 @@ export default function Showcase() {
           if (item.base === "biblio") {
             return (
               <Link key={i} href="/tabara-urbana-astra/inscriere">
-                <Modal key={i + "asd"}>
+                <Modal>
                   <BentoGridItem
                     id={i + "bento"}
                     title={item.title}
@@ -37,44 +37,6 @@ export default function Showcase() {
                     className={item.className}
                     icon={item.icon}
                   />
-                  <ModalBody className="bg-white">
-                    <ModalContent className="bg-white">
-                      <h4 className="text-lg md:text-2xl text-neutral-600 font-bold text-center">
-                        {item.title}🎉
-                      </h4>
-                      <div className="flex justify-center items-center">
-                        {item.imagini !== 0 &&
-                          [1, 2, 3, 4].map((image, idx) => (
-                            <EnlargingImage
-                              id={item.title + idx}
-                              key={"images" + idx}
-                              src={`/${item.base}${idx + 1}.jpeg`}
-                              alt="image"
-                            />
-                          ))}
-                      </div>
-                      <div
-                        data-theme="light"
-                        className="py-10 flex flex-wrap items-start justify-start max-w-sm mx-auto prose prose-sm"
-                      >
-                        <p>Lucram la website. Revino dupa 18:30.</p>
-                      </div>
-                    </ModalContent>
-                    <ModalFooter className="flex justify-center flex-row pb-2 pt-2 bg-inherit gap-2">
-                      {item.base === "biblio" ? (
-                        <Link
-                          href="/tabara-urbana-astra/inscriere"
-                          className="btn btn-accent"
-                        >
-                          Contact
-                        </Link>
-                      ) : (
-                        <Link href="/contact" className="btn btn-primary">
-                          Contact
-                        </Link>
-                      )}
-                    </ModalFooter>
-                  </ModalBody>
                 </Modal>
               </Link>
             );
@@ -90,21 +52,23 @@ export default function Showcase() {
                 className={item.className}
                 icon={item.icon}
               />
-              <ModalBody>
+              <ModalBody className=" sm:!max-w-[45vw]">
                 <ModalContent>
                   <h4 className="text-lg md:text-2xl text-neutral-600 font-bold text-center">
                     {item.title}🎉
                   </h4>
                   <div className="flex justify-center items-center">
                     {item.imagini !== 0 &&
-                      [1, 2, 3, 4].map((image, idx) => (
-                        <EnlargingImage
-                          id={item.title + idx}
-                          key={item.title + idx}
-                          src={`/${item.base}${idx + 1}.jpeg`}
-                          alt="image"
-                        />
-                      ))}
+                      Array.from(Array(item.imagini).keys()).map(
+                        (image, idx) => (
+                          <EnlargingImage
+                            id={item.title + idx}
+                            key={item.title + idx}
+                            src={`/${item.base}${idx + 1}.jpeg`}
+                            alt="image"
+                          />
+                        )
+                      )}
                   </div>
                   <div
                     data-theme="light"
@@ -178,7 +142,7 @@ const items = [
   },
   {
     title: "Cursuri de engleză începători - Turnișor",
-    base: "mascote",
+    base: "engleza",
     description: "",
     data: [],
     header: (
@@ -186,7 +150,7 @@ const items = [
         <img className="object-cover w-full rounded-xl" src="vara2.jpeg" />
       </Skeleton>
     ),
-    imagini: 0,
+    imagini: 1,
     text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
     className: "col-span-1 bg-accent border-none text-accent-content",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
@@ -194,14 +158,14 @@ const items = [
 
   {
     title: "Tabara de toamna",
-    base: "jocuri",
+    base: "toamna",
     description: "300 lei / ora / 1 animator",
     text: "Specialiștii noștri în jocuri stabilesc legături între copii, îi învăța lucrul în echipă și bunele maniere, creând spațiul pentru prietenie. Un animator gestionează perfect un număr de 15 copii. Putem conduce jocuri cu orice număr de copii. Chiar si peste 100.",
     className: "row-span-2 bg-accent text-primary-content",
     imagini: 1,
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="vara3.jpeg" />
+        <img className="object-cover w-full rounded-xl" src="toamna5.jpeg" />
       </Skeleton>
     ),
     icon: <IconConfetti className="h-4 w-4 text-accent-content" />,

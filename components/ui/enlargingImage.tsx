@@ -35,14 +35,14 @@ export default function EnlargingImage({
       />
       <dialog
         id={"modal" + id}
-        className="h-screen w-screen flex justify-center items-center border-none p-0 bg-transparent overflow-hidden"
+        className="modal h-screen w-screen flex justify-center items-center border-none p-0 bg-transparent overflow-hidden"
       >
-        <div className="modal-box aspect-square h-[80vh] w-[80vw] p-6">
+        <div className="modal-box aspect-square w-full sm:w-[80vw] h-full p-6">
           <Image
             src={src}
             alt="imagine"
-            width="500"
-            height="500"
+            width="1000"
+            height="1000"
             className="rounded-lg object-cover h-full w-full flex-shrink-0  border-none"
           />
         </div>
