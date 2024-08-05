@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="relative">
           {children}
           <div className="custom-shape-divider-bottom-1722860320">
