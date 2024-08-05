@@ -69,8 +69,8 @@ export default function Rezerva() {
               Informatii
             </a>
           </ModalTrigger>
-          <ModalBody className="overflow-y-visible relative z-[99] block">
-            <ModalContent className="h-max prose block text-start mx-auto">
+          <ModalBody className="overflow-y-visible relative z-[99] block bg-white">
+            <ModalContent className="h-max prose block text-start mx-auto bg-white">
               <h1>Informatii</h1>
               <ul>
                 <li>🖍️ Pentru cine e? Vârsta recomandată e între 6-10 ani</li>
