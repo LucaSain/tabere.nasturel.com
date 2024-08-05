@@ -8,6 +8,7 @@ import {
   ModalTrigger,
 } from "../../../components/ui/animated-modal";
 import { useState } from "react";
+import Background from "@/components/ui/background-astra";
 export default function Rezerva() {
   const [loading, setLoading] = useState(false);
   //Nume preune telefon adresa mail numar de copii numar de adulti
@@ -53,20 +54,26 @@ export default function Rezerva() {
     />,
   ];
   return (
-    <div className="h-screen w-screen flex items-center flex-col justify-center">
-      <div className="text-center z-30 bg-base-100 bg-opacity-50 rounded-lg p-5">
+    <div
+      data-theme="light"
+      className="h-screen w-screen flex items-center flex-col justify-center"
+    >
+      <Background />
+      <div className="text-center z-30 rounded-lg p-5">
         <h1 className="text-2xl sm:text-5xl font-bold ">
           Tabara Nasturel-Astra
         </h1>
-        <Modal>
-          <ModalTrigger>
-            <a className="btn btn-info">Informatii</a>
+        <Modal data-theme="aqua">
+          <ModalTrigger id="none">
+            <a data-theme="aqua" className="btn btn-info">
+              Informatii
+            </a>
           </ModalTrigger>
           <ModalBody className="overflow-y-visible relative z-[99] block">
             <ModalContent className="h-max prose block text-start mx-auto">
               <h1>Informatii</h1>
               <ul>
-                <li> 🖍️ Pentru cine e? Vârsta recomandată e între 6-10 ani</li>
+                <li>🖍️ Pentru cine e? Vârsta recomandată e între 6-10 ani</li>
 
                 <li>🖍️ Când? 21 - 26 August, între orele 10:00 - 14:00</li>
 
@@ -140,7 +147,7 @@ export default function Rezerva() {
           );
         })}
 
-        <button type="submit" className="btn btn-primary">
+        <button data-theme="aqua" type="submit" className="btn btn-primary">
           Trimite
         </button>
       </form>

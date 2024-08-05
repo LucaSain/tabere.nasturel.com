@@ -17,7 +17,7 @@ export async function sendEmail({
       {
         From: {
           Email: "inscriere-tabara@nasturel.com",
-          Name: "inscriere tabara",
+          Name: "contact-tabere",
         },
         To: [
           {

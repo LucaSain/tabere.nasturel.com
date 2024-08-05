@@ -2,3 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-shape-divider-bottom-1722860320 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1722860320 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1722860320 .shape-fill {
+    fill: #3A8AC4;
+}
+
+
+.custom-shape-divider-bottom-1722860704 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1722860704 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 102px;
+}
+
+.custom-shape-divider-bottom-1722860704 .shape-fill {
+    fill: #345DA7;
+}
+
+.cls-1 {
+    transform: scale(0.9);
+    fill: #a5d8ff;
+    stroke: #1971c2;
+    stroke-width: 10px;
+    stroke-linejoin: round;
+  }
+  svg{
+    overflow: visible;
+  }

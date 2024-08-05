@@ -42,13 +42,16 @@ export function Modal({ children }: { children: ReactNode }) {
 export const ModalTrigger = ({
   children,
   className,
+  id,
 }: {
+  id: string;
   children: ReactNode;
   className?: string;
 }) => {
   const { setOpen } = useModal();
   return (
     <button
+      id={id}
       className={cn(
         "px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden",
         className
@@ -103,7 +106,7 @@ export const ModalBody = ({
           <motion.div
             ref={modalRef}
             className={cn(
-              "h-[80vh] max-w-[100vw] rounded-xl sm:max-w-[80vw] bg-white dark:bg-neutral-950 border border-transparent dark:border-neutral-800 md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-hidden",
+              "h-[80vh] max-h-[80vh] sm:h-[80vh] max-w-[100vw] rounded-xl sm:max-w-[80vw] bg-white dark:bg-neutral-950 border border-transparent dark:border-neutral-800 md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-x-hidden",
               className
             )}
             initial={{
@@ -131,14 +134,6 @@ export const ModalBody = ({
           >
             <CloseIcon />
             {children}
-            <div
-              className="btn btn-primary mb-2"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              Inapoi la formular
-            </div>
           </motion.div>
         </motion.div>
       )}
@@ -154,7 +149,7 @@ export const ModalContent = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
+    <div className={cn("flex flex-col flex-1 p-8 md:pt-10 pb-2", className)}>
       {children}
     </div>
   );
@@ -167,6 +162,7 @@ export const ModalFooter = ({
   children: ReactNode;
   className?: string;
 }) => {
+  const { setOpen } = useModal();
   return (
     <div
       className={cn(
@@ -174,6 +170,14 @@ export const ModalFooter = ({
         className
       )}
     >
+      <div
+        className="btn btn-primary max-w-sm mb-2"
+        onClick={() => {
+          setOpen(false);
+        }}
+      >
+        Inchide
+      </div>
       {children}
     </div>
   );
