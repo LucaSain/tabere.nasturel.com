@@ -21,11 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Navbar /> */}
+        <Navbar />
         <Analytics />
-        {children}
-        {/* <div className="relative">
-          
+        <div className="relative">
+          {children}
           <div className="custom-shape-divider-bottom-1722860320">
             <svg
               data-name="Layer 1"
@@ -39,7 +38,7 @@ export default function RootLayout({
               ></path>
             </svg>
           </div>
-        </div> */}
+        </div>
         <Footer />
       </body>
     </html>

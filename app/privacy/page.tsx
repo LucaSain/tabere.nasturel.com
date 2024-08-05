@@ -17,9 +17,9 @@ export default function Page() {
         numar copii, numar adulti) sunt colectate de Nasturel în calitate de
         organizator al programului iar datele sunt colectate în scopul
         înscrierii copiilor dumneavoastră si dumneavoastră in calitate de
-        parinte/tutore la acest program (Festivalul Nasturel), în scopul
-        participării la acest program pe o perioadă nedeterminată, în scopul
-        comunicării cu referire la program prin intermediul emailului sau
+        parinte/tutore la acest program (Tabara Urbana Astra Nasturel), în
+        scopul participării la acest program pe o perioadă nedeterminată, în
+        scopul comunicării cu referire la program prin intermediul emailului sau
         telefonului, în scop statistic, cu respectarea prevederilor legale în
         vigoare.
       </p>

@@ -106,7 +106,7 @@ export const ModalBody = ({
           <motion.div
             ref={modalRef}
             className={cn(
-              "h-[80vh] max-h-[80vh] sm:h-[80vh] max-w-[100vw] rounded-xl sm:max-w-[80vw] bg-white :bg-neutral-950 border border-transparent :border-neutral-800 md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-x-hidden",
+              "h-[80vh] max-h-[80vh] sm:h-[80vh] max-w-[100vw] rounded-xl sm:max-w-[80vw] bg-white  border border-transparent  md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-x-hidden",
               className
             )}
             initial={{

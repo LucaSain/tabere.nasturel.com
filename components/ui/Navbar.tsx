@@ -149,10 +149,10 @@ export default function Navbar() {
       </div>
       <div className="navbar-end gap-3">
         <a
-          className=" hidden sm:flex bg-gradient-to-l btn btn-primary from-primary to-secondary text-accent-content border-none hover:bg-none"
+          className=" hidden sm:flex btn btn-accent text-accent-content border-none"
           href="https://nasturel.com"
         >
-          Festival
+          Festivalul nasturel
         </a>
         <Link href="/contact" className="btn btn-primary">
           Contact
