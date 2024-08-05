@@ -147,7 +147,13 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end gap-3">
+        <a
+          className="bg-gradient-to-l btn btn-primary from-primary to-secondary text-accent-content border-none hover:bg-none"
+          href="https://nasturel.com"
+        >
+          Festivalul Nasturel
+        </a>
         <Link href="/contact" className="btn btn-primary">
           Contact
         </Link>

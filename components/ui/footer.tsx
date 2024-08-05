@@ -4,7 +4,10 @@ export default function Footer() {
       <aside>
         <h1 className="text-lg  font-bold">Petreceri pentru copii Sibiu</h1>
 
-        <p>Cele mai tari petreceri din 2016</p>
+        <p>
+          Venim cu 8 ani experiență in lucrul cu copii si facem cele mai tari
+          tabere pentru ei!
+        </p>
         <p>
           Contact: <a href="tel:40764276889"> +40 (764) 276 889 </a>{" "}
         </p>

@@ -62,7 +62,11 @@ export default function Showcase() {
                   data-theme="light"
                   className="py-10 flex flex-wrap items-start justify-start max-w-sm mx-auto prose prose-sm"
                 >
-                  <p> {item.text} </p>
+                  <p>
+                    {" "}
+                    venim cu 8 ani experiență in lucrul cu copii si facem cele
+                    mai tari tabere pentru ei
+                  </p>
                 </div>
               </ModalContent>
               <ModalFooter className="flex justify-center flex-row pb-2 pt-2 bg-inherit gap-2">
