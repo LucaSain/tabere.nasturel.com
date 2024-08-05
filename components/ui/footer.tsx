@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer bg-neutral text-neutral-content p-10">
       <aside>
-        <h1 className="text-lg  font-bold">Petreceri pentru copii Sibiu</h1>
+        <h1 className="text-lg  font-bold">Nasturel</h1>
 
         <p>
           Venim cu 8 ani experiență in lucrul cu copii si facem cele mai tari
