@@ -9,6 +9,7 @@ interface names {
   email: string;
   numar_copii: string;
   numar_adulti: string;
+  varsta: string;
 }
 
 const names = [
@@ -63,6 +64,7 @@ const submit = async (formData: FormData) => {
     email: "",
     numar_copii: "",
     numar_adulti: "",
+    varsta: "",
   };
   //create object with keys
   for (let name of names) {

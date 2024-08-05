@@ -9,6 +9,7 @@ import {
 } from "../../../components/ui/animated-modal";
 import { useState } from "react";
 import Background from "@/components/ui/background-astra";
+import { Link } from "lucide-react";
 export default function Rezerva() {
   const [loading, setLoading] = useState(false);
   //Nume preune telefon adresa mail numar de copii numar de adulti
@@ -63,65 +64,72 @@ export default function Rezerva() {
         <h1 className="text-2xl sm:text-5xl font-bold ">
           Tabara Nasturel-Astra
         </h1>
-        <Modal data-theme="aqua">
-          <ModalTrigger id="none">
-            <a data-theme="aqua" className="btn btn-info">
-              Informatii
-            </a>
-          </ModalTrigger>
-          <ModalBody className="overflow-y-visible relative z-[99] block bg-white">
-            <ModalContent className="h-max prose block text-start mx-auto bg-white">
-              <h1>Informatii</h1>
-              <ul>
-                <li>🖍️ Pentru cine e? Vârsta recomandată e între 6-10 ani</li>
+        <div className="flex flex-row justify-center items-center">
+          <a href="https://nasturel.com" className="btn btn-accent">
+            Festivalul Nasturel!
+          </a>
+          <Modal data-theme="aqua">
+            <ModalTrigger id="none">
+              <a data-theme="aqua" className="btn btn-info">
+                Informatii
+              </a>
+            </ModalTrigger>
+            <ModalBody className="overflow-y-visible relative z-[99] block bg-white">
+              <ModalContent className="h-max prose block text-start mx-auto bg-white">
+                <h1>Informatii</h1>
+                <ul>
+                  <li>🖍️ Pentru cine e? Vârsta recomandată e între 6-10 ani</li>
 
-                <li>🖍️ Când? 21 - 26 August, între orele 10:00 - 14:00</li>
+                  <li>🖍️ Când? 21 - 26 August, între orele 10:00 - 14:00</li>
 
-                <li>
-                  🖍️ Cât ne costă? Prețul este stabilit în funcție de numărul de
-                  participanți, pentru detalii în acest sens și înscrieri
-                  contactați managerul de proiect - 0753936093 Andrei Sainenco.
-                </li>
+                  <li>
+                    🖍️ Cât ne costă? Prețul este stabilit în funcție de numărul
+                    de participanți, pentru detalii în acest sens și înscrieri
+                    contactați managerul de proiect - 0753936093 Andrei
+                    Sainenco.
+                  </li>
 
-                <li>
-                  🖍️ Ce facem? Ne facem prieteni, învățăm să ne purtăm în
-                  societate, facem multă artă, jocuri și ateliere. (Majoritatea
-                  atelierelor rezultă într-un obiect pe care copii îl iau acasă)
-                </li>
-              </ul>
-              <h2>Lista Ateliere</h2>
-              <ul>
-                <li>🎨 atelier magneți de frigider</li>
-                <li>🎨 atelier de pictat pietre/inimi/forme de ipsos</li>
-                <li>🎨 atelier baloane uriașe de săpun</li>
-                <li>🎨 atelier de măști</li>
-                <li>
-                  🎨 atelier de ritm (copiii interacționează cu instrumente de
-                  percutie)
-                </li>
-                <li>🎨 atelier de semn de carte</li>
-                <li>🎨 atelier de origami</li>
-                <li>🎨 atelier de pictat pe panza </li>
-                <li>🎨 atelier de facut bratari</li>
-                <li>🎨 atelier de papusi din ziar</li>
-                <li>🎨 atelier de teatru social</li>
-              </ul>
-              <h2>⌚ Program zilnic:</h2>
-              <ul>
-                <li>10:00 - 11:00 Jocuri de energizare, de prietenie</li>
-                <li>11:00 - 12:00 Ateliere</li>
-                <li>12:00 - 13:00 Activități în echipă</li>
-                <li>13:00 - 14:00 Ateliere/Jocuri în engleză </li>
-              </ul>
-              <p>🖍️ Cum ne înscriem?</p>
-              <p>
-                Prin telefon/whatsapp:
-                <a type="tel:+40753936093"> 0753936093</a> Andrei sau prin
-                website și vă sună agenția pentru confirmare.
-              </p>
-            </ModalContent>
-          </ModalBody>
-        </Modal>
+                  <li>
+                    🖍️ Ce facem? Ne facem prieteni, învățăm să ne purtăm în
+                    societate, facem multă artă, jocuri și ateliere.
+                    (Majoritatea atelierelor rezultă într-un obiect pe care
+                    copii îl iau acasă)
+                  </li>
+                </ul>
+                <h2>Lista Ateliere</h2>
+                <ul>
+                  <li>🎨 atelier magneți de frigider</li>
+                  <li>🎨 atelier de pictat pietre/inimi/forme de ipsos</li>
+                  <li>🎨 atelier baloane uriașe de săpun</li>
+                  <li>🎨 atelier de măști</li>
+                  <li>
+                    🎨 atelier de ritm (copiii interacționează cu instrumente de
+                    percutie)
+                  </li>
+                  <li>🎨 atelier de semn de carte</li>
+                  <li>🎨 atelier de origami</li>
+                  <li>🎨 atelier de pictat pe panza </li>
+                  <li>🎨 atelier de facut bratari</li>
+                  <li>🎨 atelier de papusi din ziar</li>
+                  <li>🎨 atelier de teatru social</li>
+                </ul>
+                <h2>⌚ Program zilnic:</h2>
+                <ul>
+                  <li>10:00 - 11:00 Jocuri de energizare, de prietenie</li>
+                  <li>11:00 - 12:00 Ateliere</li>
+                  <li>12:00 - 13:00 Activități în echipă</li>
+                  <li>13:00 - 14:00 Ateliere/Jocuri în engleză </li>
+                </ul>
+                <p>🖍️ Cum ne înscriem?</p>
+                <p>
+                  Prin telefon/whatsapp:
+                  <a type="tel:+40753936093"> 0753936093</a> Andrei sau prin
+                  website și vă sună agenția pentru confirmare.
+                </p>
+              </ModalContent>
+            </ModalBody>
+          </Modal>
+        </div>
         <h2 className="mt-4">
           Completeaza formularul de mai jos si te contactam noi:
         </h2>
@@ -146,8 +154,21 @@ export default function Rezerva() {
             </div>
           );
         })}
-
-        <button data-theme="aqua" type="submit" className="btn btn-primary">
+        <div
+          data-theme="light"
+          className="form-control p-2 border-2 border-primary bg-base-100 rounded-lg w-full "
+        >
+          <label className="label cursor-pointer">
+            <span className="label-text">
+              Sunt de acord cu{" "}
+              <a className="text-primary" href="/privacy">
+                politica de procesare a datelor
+              </a>
+            </span>
+            <input type="checkbox" required className="checkbox checkbox-" />
+          </label>
+        </div>
+        <button data-theme="light" type="submit" className="btn btn-accent">
           Trimite
         </button>
       </form>
