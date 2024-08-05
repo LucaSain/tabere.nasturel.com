@@ -74,7 +74,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl">
+        <Link href="/" className="btn btn-ghost text-lg sm:text-xl">
           Taberele Nasturel
         </Link>
       </div>
@@ -149,10 +149,10 @@ export default function Navbar() {
       </div>
       <div className="navbar-end gap-3">
         <a
-          className="bg-gradient-to-l btn btn-primary from-primary to-secondary text-accent-content border-none hover:bg-none"
+          className=" hidden sm:flex bg-gradient-to-l btn btn-primary from-primary to-secondary text-accent-content border-none hover:bg-none"
           href="https://nasturel.com"
         >
-          Festivalul Nasturel
+          Festival
         </a>
         <Link href="/contact" className="btn btn-primary">
           Contact

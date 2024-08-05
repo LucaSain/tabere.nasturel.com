@@ -7,7 +7,7 @@ export default function Hero() {
       <Background />
 
       <div className="hero-overlay bg-base-300 bg-opacity-80"></div>
-      <div className="hero-content text-neutral-content text-center p-2 ">
+      <div className="hero-content text-neutral-content text-center p-2 flex flex-col sm:flex-row ">
         <Image
           width={400}
           height={400}
