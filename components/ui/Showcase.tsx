@@ -175,78 +175,6 @@ const items = [
   },
 
   {
-    title: "Tabara de toamna",
-    base: "toamna",
-    description: "300 lei / ora / 1 animator",
-    text: (
-      <>
-        <p className="w-full flex items-center justify-center">
-          <a
-            href="https://xir03eiqsitl1won.public.blob.vercel-storage.com/Test/Oferta%CC%86%20Taba%CC%86ra%CC%86%20de%20toamna%CC%86%202024-rO6ccU6u0czpBdG0h5QsY1kRb4gHVu.pdf"
-            className="btn btn-accent my-2 no-underline"
-          >
-            Descarca oferta
-          </a>
-        </p>
-        <h1>Tabără de toamnă - 5 zile</h1>
-        <h2>Perioadă</h2>
-        <p>
-          5 zile în perioada vacanței de toamnă, 28 octombrie - 1 noiembrie 2024
-        </p>
-        <p>Cazare disponibilă în Păltiniș, Râul Sadului, Cisnădioara.</p>
-        <h2>Preț</h2>
-        <p>
-          1150 - 1250 lei/persoană în funcție de numărul de participanți - nu
-          include prețul transportului sau activitățile extra
-        </p>
-        <p>
-          <u>
-            Ofertă pentru cadre didactice, virăm 100 de lei pentru fiecare elev
-            înscris spre fondul școlii/clasei!
-          </u>
-        </p>
-        <h2>Ce include tabăra de toamnă:</h2>
-        <ul>
-          <li>Cazare și masă</li>
-          <li>Ateliere creative</li>
-          <li>Ateliere sociale</li>
-          <li>Jocuri interactive Activități afară</li>
-          <li>Drumeții specifice locației</li>
-        </ul>
-        <p>
-          Atelierele sunt conduse de persoane din diferite arii - artiști în
-          artele plastice, muzicale, pedagogi, actori și psihologi. Fiecare 15
-          copii au un coordonator desemnat.
-        </p>
-        <h2>Activități extra/opțiuni </h2>
-        <p>(Prețul acestora depinde de numărul de copii)</p>
-        <ul>
-          <li>Excursie la Zoo Sibiu</li>
-          <li>
-            Excursie la Muzeul Civilizației Populare Tradiționale ASTRA Sibiu
-            Tur centrul vechi din Sibiu (4 destinații tursitice)
-          </li>
-          <li>Vizitare parcul tematic Brambura, Valea Avrigului</li>
-          <li>
-            Vizitare parcul tematic Povestea Calendarului, Valea Avrigului
-            Vizitare Dexiworld Park Malaia, Valea Oltului
-          </li>
-          <li>Vizitare Zorabia, ferma de cai pur sânge arabi</li>
-          <li>Drumeție vârful Bătrâna, vârful Oncești, potecile lui Cioran.</li>
-        </ul>
-      </>
-    ),
-    className: "row-span-2 bg-accent text-primary-content",
-    imagini: 4,
-    header: (
-      <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="toamna5.jpeg" />
-      </Skeleton>
-    ),
-    icon: <IconConfetti className="h-4 w-4 text-accent-content" />,
-    data: [],
-  },
-  {
     title: "Tabara de iarna",
     base: "iarna",
     description: "300 lei / ora / 1 animator",
@@ -266,7 +194,7 @@ const items = [
         <p>
           10 februarie 2025 - 2 martie 2025, în funcție de când aveți vacanța.
         </p>
-        <h2>Preț</h2>
+        {/* <h2>Preț</h2>
         <p>
           A. 1150 - 1250 lei / persoană în funcție de numărul de participanți:
           Tabără de iarnă - nu include transportul
@@ -274,7 +202,7 @@ const items = [
         <p>
           B. 2000-2200 lei / persoană: Tabără de iarnă + Școala de schi (separat
           doar Școala de schi 850-950 de lei/persoană)
-        </p>
+        </p> */}
         <p>
           <u>
             Ofertă pentru cadre didactice, virăm 100 de lei pentru fiecare elev
@@ -334,18 +262,91 @@ const items = [
     data: [],
   },
   {
+    title: "Tabara de toamna",
+    base: "toamna",
+    description: "300 lei / ora / 1 animator",
+    text: (
+      <>
+        <p className="w-full flex items-center justify-center">
+          <a
+            href="https://xir03eiqsitl1won.public.blob.vercel-storage.com/Test/Oferta%CC%86%20Taba%CC%86ra%CC%86%20de%20toamna%CC%86%202024-rO6ccU6u0czpBdG0h5QsY1kRb4gHVu.pdf"
+            className="btn btn-accent my-2 no-underline"
+          >
+            Descarca oferta
+          </a>
+        </p>
+        <h1>Tabără de toamnă - 5 zile</h1>
+        <h2>Perioadă</h2>
+        <p>
+          5 zile în perioada vacanței de toamnă, 28 octombrie - 1 noiembrie 2024
+        </p>
+        <p>Cazare disponibilă în Păltiniș, Râul Sadului, Cisnădioara.</p>
+        {/* <h2>Preț</h2>
+        <p>
+          1150 - 1250 lei/persoană în funcție de numărul de participanți - nu
+          include prețul transportului sau activitățile extra
+        </p> */}
+        <p>
+          <u>
+            Ofertă pentru cadre didactice, virăm 100 de lei pentru fiecare elev
+            înscris spre fondul școlii/clasei!
+          </u>
+        </p>
+        <h2>Ce include tabăra de toamnă:</h2>
+        <ul>
+          <li>Cazare și masă</li>
+          <li>Ateliere creative</li>
+          <li>Ateliere sociale</li>
+          <li>Jocuri interactive Activități afară</li>
+          <li>Drumeții specifice locației</li>
+        </ul>
+        <p>
+          Atelierele sunt conduse de persoane din diferite arii - artiști în
+          artele plastice, muzicale, pedagogi, actori și psihologi. Fiecare 15
+          copii au un coordonator desemnat.
+        </p>
+        <h2>Activități extra/opțiuni </h2>
+        <p>(Prețul acestora depinde de numărul de copii)</p>
+        <ul>
+          <li>Excursie la Zoo Sibiu</li>
+          <li>
+            Excursie la Muzeul Civilizației Populare Tradiționale ASTRA Sibiu
+            Tur centrul vechi din Sibiu (4 destinații tursitice)
+          </li>
+          <li>Vizitare parcul tematic Brambura, Valea Avrigului</li>
+          <li>
+            Vizitare parcul tematic Povestea Calendarului, Valea Avrigului
+            Vizitare Dexiworld Park Malaia, Valea Oltului
+          </li>
+          <li>Vizitare Zorabia, ferma de cai pur sânge arabi</li>
+          <li>Drumeție vârful Bătrâna, vârful Oncești, potecile lui Cioran.</li>
+        </ul>
+      </>
+    ),
+    className: "row-span-2 bg-accent text-primary-content",
+    imagini: 4,
+    header: (
+      <Skeleton>
+        <img className="object-cover w-full rounded-xl" src="toamna5.jpeg" />
+      </Skeleton>
+    ),
+    icon: <IconConfetti className="h-4 w-4 text-accent-content" />,
+    data: [],
+  },
+
+  {
     title: "Tabara de vara",
     base: "vara",
     description: "300 lei / ora / 1 animator - max. 15 copii",
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="vara1.jpeg" />
+        <img className="object-cover w-full rounded-xl" src="vara3.jpeg" />
       </Skeleton>
     ),
     imagini: 4,
     text: (
       <>
-        <h1>In curand</h1>
+        <h2>Oferta se face începând cu decembrie</h2>
       </>
     ),
     data: [],

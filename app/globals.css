@@ -51,9 +51,7 @@
     stroke: #1971c2;
     stroke-width: 10px;
     stroke-linejoin: round;
-  }
-  svg{
+}
+svg{
     overflow: visible;
-  }
-
- 
+}

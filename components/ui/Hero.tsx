@@ -21,16 +21,14 @@ export default function Hero() {
             Taberele nasturel
           </h1>
           <p className="mb-5 text-base-content">
-            Cele mai tari tabere pentru copii
+            Vezi mai jos cele mai tari tabere pentru copii!
           </p>
-          <Link href="/contact" className="btn btn-primary">
-            Contact
-          </Link>
           <a
             href="https://nasturel.com"
-            className="sm:hidden ml-1 btn btn-accent text-secondary-content"
+            className="sm:hidden ml-1 btn flex flex-col max-w-sm btn-accent text-secondary-content"
           >
-            Festivalul Nasturel
+            <p className="text-md"> Festivalul nasturel</p>
+            <p className="text-xs">29 Aug - 1 Sep</p>
           </a>
         </div>
       </div>

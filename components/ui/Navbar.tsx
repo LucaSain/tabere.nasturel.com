@@ -12,7 +12,7 @@ export default function Navbar() {
   const path = usePathname();
 
   return (
-    <div className="navbar z-[999] bg-base-100 shadow-xl fixed rounded-b-lg">
+    <div className="navbar bg-base-100 shadow-xl fixed z-[999] rounded-b-lg">
       <div className="navbar-start">
         {/* <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -149,10 +149,11 @@ export default function Navbar() {
       </div>
       <div className="navbar-end gap-3">
         <a
-          className=" hidden sm:flex btn btn-accent text-accent-content border-none"
+          className=" hidden sm:flex btn btn-accent text-accent-content border-none flex-col"
           href="https://nasturel.com"
         >
-          Festivalul nasturel
+          <p className="text-md"> Festivalul nasturel</p>
+          <p className="text-xs">29 Aug - 1 Sep</p>
         </a>
         <Link href="/contact" className="btn btn-primary">
           Contact

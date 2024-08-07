@@ -37,15 +37,20 @@ export default function EnlargingImage({
         id={"modal" + id}
         className="modal h-screen w-screen flex justify-center items-center border-none p-0 bg-transparent overflow-hidden"
       >
-        <div className="modal-box aspect-square w-full sm:w-[80vw] h-full p-6">
-          <Image
-            src={src}
-            alt="imagine"
-            width="1000"
-            height="1000"
-            className="rounded-lg object-cover h-full w-full flex-shrink-0  border-none"
-          />
+        <div className="relative modal-box h-screen w-screen max-w-[100vw] sm:!w-[60vw] sm:!max-w-[60vw] p-3 sm:p-6">
+          <form method="dialog" className="h-full w-full rounded-xl">
+            <button className="h-full w-full">
+              <Image
+                src={src}
+                alt="imagine"
+                width="1000"
+                height="1000"
+                className="rounded-lg object-cover h-full w-full flex-shrink-0 border-none"
+              />
+            </button>
+          </form>
         </div>
+
         <form
           method="dialog"
           className="modal-backdrop absolute h-screen w-screen"
