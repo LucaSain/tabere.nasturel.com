@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <div className="navbar z-[999] bg-base-100 shadow-xl fixed rounded-b-lg">
       <div className="navbar-start">
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +73,13 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <Link href="/" className="btn btn-ghost text-lg sm:text-xl">
           Taberele Nasturel
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        {/* <ul className="menu menu-horizontal px-1">
           <li>
             <div className="dropdown dropdown-bottom dropdown-end relative">
               <div tabIndex={0} role="button" className="relative z-0">
@@ -145,7 +145,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
       <div className="navbar-end gap-3">
         <a

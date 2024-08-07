@@ -23,7 +23,7 @@ export default function Showcase() {
       <h1 className="text-center text-4xl font-semibold py-10 z-[10] relative">
         Taberele noastre
       </h1>
-      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] z-[10] relative flex flex-col gap-4 justify-center px-4 sm:grid pb-10 sm:pb-20">
+      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] z-[10] relative flex flex-col gap-4 justify-center px-4 sm:grid pb-10 sm:pb-20 overflow-hidden ]">
         {items.map((item, i) => {
           if (item.base === "biblio") {
             return (
@@ -70,15 +70,8 @@ export default function Showcase() {
                         )
                       )}
                   </div>
-                  <div
-                    data-theme="light"
-                    className="py-10 flex flex-wrap items-start justify-start max-w-sm mx-auto prose prose-sm"
-                  >
-                    <p>
-                      {" "}
-                      venim cu 8 ani experiență in lucrul cu copii si facem cele
-                      mai tari tabere pentru ei
-                    </p>
+                  <div data-theme="light" className="py-10 mx-auto prose">
+                    {item.text}
                   </div>
                 </ModalContent>
                 <ModalFooter className="flex justify-center flex-row pb-2 pt-2 bg-inherit gap-2">
@@ -117,42 +110,67 @@ const items = [
     data: [],
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="vara1.jpeg" />
+        <img className="object-cover w-full rounded-xl" src="vara2.jpeg" />
       </Skeleton>
     ),
     imagini: 0,
-    text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
+    text: "",
     className: "col-span-1 bg-primary border-none text-primary-content h-full",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
-    title: "Ateliere creative - Turnișor, Muzeul de etnie romă",
+    title: "Ateliere creative - Turnișor",
     base: "ateliere",
     description: "",
     data: [],
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="/ateliere1.jpeg" />
+        <img className="object-cover w-full rounded-xl" src="/ateliere4.jpeg" />
       </Skeleton>
     ),
     imagini: 4,
-    text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
-    className: "col-span-1 bg-secondary text-secondary-content  border-none",
+    text: (
+      <>
+        <p>In zilele de Marti şi Joi, începand cu 13 August</p>
+        <p>Grupa mare: 14:00-16:00 | Grupa mica 16:00-18:00</p>
+        <p>Primul atelier 35 ron | Pret lunar 200 ron - 1 sedinta/ saptamana</p>
+        <ul>
+          <li>atelier de magneti de frigider</li>
+          <li>atelier pictura pe pietre </li>
+          <li>atelier baloane uriase de sapun</li>
+          <li>atelier confectionat masti</li>
+          <li>atelier de ritm (invatam sa baten la tobe)</li>
+          <li>atelier origami</li>
+          <li>
+            atelier de confectionat bratari atelier de facut papusi din ziar
+          </li>
+        </ul>
+      </>
+    ),
+    className: "col-span-1 bg-accent text-accent-content  border-none h-full",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
-    title: "Cursuri de engleză începători - Turnișor",
+    title: "Cursuri de engleză începători",
     base: "engleza",
     description: "",
     data: [],
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="vara2.jpeg" />
+        <img className="object-cover w-full rounded-xl" src="engleza1.jpeg" />
       </Skeleton>
     ),
     imagini: 1,
-    text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
-    className: "col-span-1 bg-accent border-none text-accent-content",
+    text: (
+      <>
+        <p>In zilele de Marti si Joi- incepand cu 13 August</p>
+
+        <p>Grupa Incepatori 18:00-19:00 | Grupa Avansati 13:00-14:00</p>
+
+        <p>Prima lectie 20 lei - 130 ron/luna</p>
+      </>
+    ),
+    className: "col-span-1 bg-white border-none text-accent-content",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
 
@@ -160,9 +178,66 @@ const items = [
     title: "Tabara de toamna",
     base: "toamna",
     description: "300 lei / ora / 1 animator",
-    text: "Specialiștii noștri în jocuri stabilesc legături între copii, îi învăța lucrul în echipă și bunele maniere, creând spațiul pentru prietenie. Un animator gestionează perfect un număr de 15 copii. Putem conduce jocuri cu orice număr de copii. Chiar si peste 100.",
+    text: (
+      <>
+        <p className="w-full flex items-center justify-center">
+          <a
+            href="https://xir03eiqsitl1won.public.blob.vercel-storage.com/Test/Oferta%CC%86%20Taba%CC%86ra%CC%86%20de%20toamna%CC%86%202024-rO6ccU6u0czpBdG0h5QsY1kRb4gHVu.pdf"
+            className="btn btn-accent my-2 no-underline"
+          >
+            Descarca oferta
+          </a>
+        </p>
+        <h1>Tabără de toamnă - 5 zile</h1>
+        <h2>Perioadă</h2>
+        <p>
+          5 zile în perioada vacanței de toamnă, 28 octombrie - 1 noiembrie 2024
+        </p>
+        <p>Cazare disponibilă în Păltiniș, Râul Sadului, Cisnădioara.</p>
+        <h2>Preț</h2>
+        <p>
+          1150 - 1250 lei/persoană în funcție de numărul de participanți - nu
+          include prețul transportului sau activitățile extra
+        </p>
+        <p>
+          <u>
+            Ofertă pentru cadre didactice, virăm 100 de lei pentru fiecare elev
+            înscris spre fondul școlii/clasei!
+          </u>
+        </p>
+        <h2>Ce include tabăra de toamnă:</h2>
+        <ul>
+          <li>Cazare și masă</li>
+          <li>Ateliere creative</li>
+          <li>Ateliere sociale</li>
+          <li>Jocuri interactive Activități afară</li>
+          <li>Drumeții specifice locației</li>
+        </ul>
+        <p>
+          Atelierele sunt conduse de persoane din diferite arii - artiști în
+          artele plastice, muzicale, pedagogi, actori și psihologi. Fiecare 15
+          copii au un coordonator desemnat.
+        </p>
+        <h2>Activități extra/opțiuni </h2>
+        <p>(Prețul acestora depinde de numărul de copii)</p>
+        <ul>
+          <li>Excursie la Zoo Sibiu</li>
+          <li>
+            Excursie la Muzeul Civilizației Populare Tradiționale ASTRA Sibiu
+            Tur centrul vechi din Sibiu (4 destinații tursitice)
+          </li>
+          <li>Vizitare parcul tematic Brambura, Valea Avrigului</li>
+          <li>
+            Vizitare parcul tematic Povestea Calendarului, Valea Avrigului
+            Vizitare Dexiworld Park Malaia, Valea Oltului
+          </li>
+          <li>Vizitare Zorabia, ferma de cai pur sânge arabi</li>
+          <li>Drumeție vârful Bătrâna, vârful Oncești, potecile lui Cioran.</li>
+        </ul>
+      </>
+    ),
     className: "row-span-2 bg-accent text-primary-content",
-    imagini: 1,
+    imagini: 4,
     header: (
       <Skeleton>
         <img className="object-cover w-full rounded-xl" src="toamna5.jpeg" />
@@ -175,7 +250,79 @@ const items = [
     title: "Tabara de iarna",
     base: "iarna",
     description: "300 lei / ora / 1 animator",
-    text: "Baloanele modelabile pot să transforme orice ocazie într-o experiență veselă și colorată. Prin creativitate și îndemânare, artiștii noștri realizează figurine spectaculoase din baloane, aducând zâmbete pe fețele celor mici.",
+    text: (
+      <>
+        <p className="w-full flex items-center justify-center">
+          <a
+            href="https://xir03eiqsitl1won.public.blob.vercel-storage.com/Test/Oferta%CC%86%20Taba%CC%86ra%CC%86%20de%20Iarna%20Paltinis%202024-4lh7ZQU92Eqi0ujOVSfiqnvvkvYeYf.pdf"
+            className="btn btn-accent my-2 no-underline"
+          >
+            Descarca oferta
+          </a>
+        </p>
+        <h1>Tabără de iarnă Păltiniș - 5 zile</h1>
+        <h2>Perioada</h2>
+        <p> 5 zile în perioada vacanțelor de iarnă</p>
+        <p>
+          10 februarie 2025 - 2 martie 2025, în funcție de când aveți vacanța.
+        </p>
+        <h2>Preț</h2>
+        <p>
+          A. 1150 - 1250 lei / persoană în funcție de numărul de participanți:
+          Tabără de iarnă - nu include transportul
+        </p>
+        <p>
+          B. 2000-2200 lei / persoană: Tabără de iarnă + Școala de schi (separat
+          doar Școala de schi 850-950 de lei/persoană)
+        </p>
+        <p>
+          <u>
+            Ofertă pentru cadre didactice, virăm 100 de lei pentru fiecare elev
+            înscris spre fondul școlii/clasei!
+          </u>
+        </p>
+        <h2>Ce include</h2>
+        <table>
+          <tr>
+            <th>Tabăra de iarnă, zilnic:</th>
+            <th>Școala de schi:</th>
+          </tr>
+          <tr>
+            <td>Cazare și masă</td>
+            <td>20 de ore de schi cu instructori acreditați (4h pe zi)</td>
+          </tr>
+          <tr>
+            <td>Ateliere creative</td>
+            <td>Diplomă și medalie la finalul școlii</td>
+          </tr>
+          <tr>
+            <td> Ateliere sociale</td>
+            <td>Foto/Video</td>
+          </tr>
+          <tr>
+            <td>Jocuri interactive</td>
+          </tr>
+          <tr>
+            <td>Activități afară</td>
+          </tr>
+        </table>
+        <h3>Ce nu include școala de schi:</h3>
+        <ul>
+          <li>
+            260 lei - închirerea echipamentululi (clăpari, ski/snowboard) toată
+            perioada
+          </li>
+          <li>20 lei/zi - cască (recomandăm achiziția unei căști proprii)</li>
+          <li>200 - 300 lei Skipass pentru toată perioada</li>
+        </ul>
+        <p>
+          Copiii au nevoie de pantaloni și geacă de schi, bluză de corp,
+          colanți, mănuși, cagulă, schiuri, clăpari și cască. Pentru cei care nu
+          doresc să schieze, sania ne poate însoți pe pârtie, vă recomandăm să
+          vă achiziționați o sanie proprie, sau închiriați de pe pârtie.
+        </p>
+      </>
+    ),
     header: (
       <Skeleton>
         <img className=" object-cover w-full rounded-xl" src="iarna1.jpeg" />
@@ -195,8 +342,12 @@ const items = [
         <img className="object-cover w-full rounded-xl" src="vara1.jpeg" />
       </Skeleton>
     ),
-    imagini: 0,
-    text: "Atelierele creative pentru copii sunt concepute pentru a oferi o experiență educativă și distractivă, în care cei mici pot să își exprime imaginația și să își dezvolte abilitățile artistice si motrice. Fiecare atelier este structurat pentru a încuraja explorarea, învățarea și dezvoltarea personală într-un mediu sigur și prietenos.",
+    imagini: 4,
+    text: (
+      <>
+        <h1>In curand</h1>
+      </>
+    ),
     data: [],
     className: "col-span-2 bg-primary text-primary-content",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
