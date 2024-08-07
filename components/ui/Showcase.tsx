@@ -110,7 +110,13 @@ const items = [
     data: [],
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="vara2.jpeg" />
+        <Image
+          alt="astra"
+          height={500}
+          width={500}
+          className="object-cover w-full rounded-xl h-full"
+          src="/vara2.jpeg"
+        />
       </Skeleton>
     ),
     imagini: 0,
@@ -125,7 +131,13 @@ const items = [
     data: [],
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="/ateliere4.jpeg" />
+        <Image
+          alt="ateliere"
+          height={500}
+          width={500}
+          className="object-cover w-full rounded-xl"
+          src="/ateliere4.jpeg"
+        />
       </Skeleton>
     ),
     imagini: 4,
@@ -157,7 +169,13 @@ const items = [
     data: [],
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="engleza1.jpeg" />
+        <Image
+          alt="engleza"
+          height={500}
+          width={500}
+          className="object-cover w-full rounded-xl"
+          src="/engleza1.jpeg"
+        />
       </Skeleton>
     ),
     imagini: 1,
@@ -253,7 +271,13 @@ const items = [
     ),
     header: (
       <Skeleton>
-        <img className=" object-cover w-full rounded-xl" src="iarna1.jpeg" />
+        <Image
+          alt="iarna"
+          height={500}
+          width={500}
+          className=" object-cover w-full rounded-xl"
+          src="/iarna1.jpeg"
+        />
       </Skeleton>
     ),
     imagini: 4,
@@ -327,7 +351,13 @@ const items = [
     imagini: 4,
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="toamna5.jpeg" />
+        <Image
+          alt="toamna"
+          height={500}
+          width={500}
+          className="object-cover w-full h-full rounded-xl"
+          src="/toamna4.jpeg"
+        />
       </Skeleton>
     ),
     icon: <IconConfetti className="h-4 w-4 text-accent-content" />,
@@ -340,7 +370,13 @@ const items = [
     description: "300 lei / ora / 1 animator - max. 15 copii",
     header: (
       <Skeleton>
-        <img className="object-cover w-full rounded-xl" src="vara3.jpeg" />
+        <Image
+          alt="vara"
+          height={500}
+          width={500}
+          className="object-cover w-full rounded-xl"
+          src="/vara3.jpeg"
+        />
       </Skeleton>
     ),
     imagini: 4,

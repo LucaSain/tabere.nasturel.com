@@ -20,9 +20,6 @@ export default function Hero() {
           <h1 className="mb-5 text-2xl sm:text-5xl font-bold  text-base-content">
             Taberele nasturel
           </h1>
-          <p className="mb-5 text-base-content">
-            Vezi mai jos cele mai tari tabere pentru copii!
-          </p>
           <a
             href="https://nasturel.com"
             className="sm:hidden ml-1 btn flex flex-col max-w-sm btn-accent text-secondary-content"
@@ -30,6 +27,9 @@ export default function Hero() {
             <p className="text-md"> Festivalul nasturel</p>
             <p className="text-xs">29 Aug - 1 Sep</p>
           </a>
+          <p className="mb-5 text-base-content pt-4 sm:pt-0">
+            Vezi mai jos cele mai tari tabere pentru copii!
+          </p>
         </div>
       </div>
       <div className="custom-shape-divider-bottom-1722860704">
