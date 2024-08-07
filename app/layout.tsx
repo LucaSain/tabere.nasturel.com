@@ -9,6 +9,10 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/nasturel.png",
+  },
+
   title: "Tabere Nasturel",
   description: "Cele mai tari tabere organizate de Nasturel",
 };
