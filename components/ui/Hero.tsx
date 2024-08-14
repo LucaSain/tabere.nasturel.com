@@ -4,13 +4,13 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div
-      className="hero min-h-screen relative"
+      className="hero min-h-screen relative bg-base-100"
       style={{
         backgroundImage: "url(/vara4.jpeg)",
       }}
     >
       <div className="hero-overlay  bg-base-300 bg-opacity-80"></div>
-      <div className="hero-content text-base-content text-center">
+      <div className="hero-content text-base-content text-center pb-32">
         <div className="max-w-md flex flex-col items-center gap-5 h-full">
           <Image
             alt="nasturel"

@@ -173,7 +173,8 @@ const items = [
         </ul>
       </>
     ),
-    className: "row-span-2  bg-accent text-accent-content  border-none h-full",
+    className:
+      "row-span-1 sm:row-span-2  bg-accent text-accent-content  border-none h-full",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
@@ -205,7 +206,8 @@ const items = [
         <p>Prima lectie 20 lei - 130 ron/luna</p>
       </>
     ),
-    className: "row-span-2 bg-secondary border-none text-accent-content",
+    className:
+      "row-span-1 sm:row-span-2 bg-secondary border-none text-accent-content",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
