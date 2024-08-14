@@ -15,7 +15,7 @@ export default function Hero() {
           <Image
             alt="nasturel"
             src="/nasturelnotext.png"
-            className="sm:-translate-x-2"
+            className="sm:-translate-x-2 translate-y-10"
             width={300}
             height={300}
           />
