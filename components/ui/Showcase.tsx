@@ -116,7 +116,7 @@ const Skeleton = ({ children }: { children?: React.ReactNode }) => (
 const items = [
   {
     title: "Tabără urbana Biblioteca Astra",
-    base: "astra",
+    base: "biblio",
     description: "",
     data: [],
     header: (
