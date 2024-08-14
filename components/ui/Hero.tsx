@@ -19,7 +19,7 @@ export default function Hero() {
             width={300}
             height={300}
           />
-          <h1 className="mb-5 text-5xl font-bold">Taberele Nasturel</h1>
+          <h1 className="mb-5 text-5xl font-bold">Taberele Nǎsturel</h1>
           <p className="mb-5">
             Venim cu 8 ani experiență in lucrul cu copii si facem cele mai tari
             activitati pentru ei!
