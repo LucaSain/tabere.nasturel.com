@@ -11,10 +11,10 @@ export default function Hero() {
     >
       <div className="hero-overlay  bg-base-300 bg-opacity-80"></div>
       <div className="hero-content text-base-content text-center pb-32">
-        <div className="max-w-md flex flex-col items-center gap-5 h-full">
+        <div className="max-w-md flex flex-col items-center gap-2 h-full">
           <Image
             alt="nasturel"
-            src="/nasturel.png"
+            src="/nasturelnotext.png"
             className="sm:-translate-x-2"
             width={300}
             height={300}

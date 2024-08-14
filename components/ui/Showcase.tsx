@@ -116,7 +116,7 @@ const Skeleton = ({ children }: { children?: React.ReactNode }) => (
 const items = [
   {
     title: "Tabără urbana Biblioteca Astra",
-    base: "biblio",
+    base: "astra",
     description: "",
     data: [],
     header: (
@@ -126,7 +126,7 @@ const items = [
           height={500}
           width={500}
           className="object-cover w-full h-full rounded-xl"
-          src="/vara2.jpeg"
+          src="/astra1.jpeg"
         />
       </Skeleton>
     ),
