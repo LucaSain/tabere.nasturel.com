@@ -178,7 +178,7 @@ const items = [
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
-    title: "Cursuri de engleză începători",
+    title: "Cursuri de engleză - Turnisor",
     base: "engleza",
     description: "",
     data: [],
