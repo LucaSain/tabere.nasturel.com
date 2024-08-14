@@ -16,20 +16,20 @@ export default function Hero() {
           src="/nasturel.png"
         />
 
-        <div className="max-w-md">
+        <div className="max-w-md flex flex-col items-center">
           <h1 className="mb-5 text-2xl sm:text-5xl font-bold  text-base-content">
             Taberele nasturel
           </h1>
           <a
             href="https://nasturel.com"
-            className="sm:hidden ml-1 btn flex flex-col max-w-sm btn-accent text-secondary-content"
+            className="sm:hidden ml-1 btn flex flex-col w-max btn-accent text-secondary-content"
           >
             <p className="text-md"> Festivalul nasturel</p>
             <p className="text-xs">29 Aug - 1 Sep</p>
           </a>
-          <p className="mb-5 text-base-content pt-4 sm:pt-0">
-            Vezi mai jos cele mai tari tabere pentru copii!
-          </p>
+          <a className="btn btn-primary" href="#tabere">
+            Vezi taberele Noastre
+          </a>
         </div>
       </div>
       <div className="custom-shape-divider-bottom-1722860704">

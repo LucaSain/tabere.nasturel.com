@@ -20,7 +20,10 @@ import Link from "next/link";
 export default function Showcase() {
   return (
     <>
-      <h1 className="text-center text-4xl font-semibold py-10 z-[10] relative">
+      <h1
+        id="tabere"
+        className="text-center text-4xl font-semibold py-10 z-[10] relative"
+      >
         Taberele noastre
       </h1>
       <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] z-[10] relative flex flex-col gap-4 justify-center px-4 sm:grid pb-10 sm:pb-20 overflow-hidden ]">
