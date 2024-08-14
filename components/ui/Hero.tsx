@@ -3,32 +3,29 @@ import Background from "./background";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <div className="hero min-h-screen relative">
-      <Background />
-
-      <div className="hero-overlay bg-base-300 bg-opacity-80"></div>
-      <div className="hero-content text-neutral-content text-center p-2 flex flex-col sm:flex-row ">
-        <Image
-          width={400}
-          height={400}
-          className=" w-60 max-w-sm "
-          alt="nasturel"
-          src="/nasturel.png"
-        />
-
-        <div className="max-w-md flex flex-col items-center">
-          <h1 className="mb-5 text-2xl sm:text-5xl font-bold  text-base-content">
-            Taberele nasturel
-          </h1>
-          <a
-            href="https://nasturel.com"
-            className="sm:hidden ml-1 btn flex flex-col w-max btn-accent text-secondary-content"
-          >
-            <p className="text-md"> Festivalul nasturel</p>
-            <p className="text-xs">29 Aug - 1 Sep</p>
-          </a>
-          <a className="btn btn-primary" href="#tabere">
-            Vezi taberele Noastre
+    <div
+      className="hero min-h-screen relative"
+      style={{
+        backgroundImage: "url(/vara4.jpeg)",
+      }}
+    >
+      <div className="hero-overlay  bg-base-300 bg-opacity-80"></div>
+      <div className="hero-content text-base-content text-center">
+        <div className="max-w-md flex flex-col items-center gap-5 h-full">
+          <Image
+            alt="nasturel"
+            src="/nasturel.png"
+            className="-translate-x-2"
+            width={300}
+            height={300}
+          />
+          <h1 className="mb-5 text-5xl font-bold">Taberele Nasturel</h1>
+          <p className="mb-5">
+            Venim cu 8 ani experiență in lucrul cu copii si facem cele mai tari
+            activitati pentru ei!
+          </p>
+          <a href="#tabere" className="btn btn-primary">
+            Vezi taberele noastre
           </a>
         </div>
       </div>
