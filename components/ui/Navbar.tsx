@@ -153,7 +153,6 @@ export default function Navbar() {
           href="https://nasturel.com"
         >
           <p className="text-md"> Festivalul nasturel</p>
-          <p className="text-xs">29 Aug - 1 Sep</p>
         </a>
         <Link href="/contact" className="btn btn-primary">
           Contact
