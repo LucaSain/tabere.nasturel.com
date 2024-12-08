@@ -18,17 +18,11 @@ export default function Hero() {
 
         <div className="max-w-md">
           <h1 className="mb-5 text-2xl sm:text-5xl font-bold  text-base-content">
-            Taberele nasturel
+            Taberele nǎsturel
           </h1>
           <p className="mb-5 text-xl sm:text-3xl text-base-content">
-            Lucram la website. Revino la 18:30 pentru o varianta actualizata.
+            Cele mai tari tabere pentru copii
           </p>
-          <a
-            href="https://nasturel.com"
-            className="ml-1 btn bg-gradient-to-l from-primary to-secondary text-secondary-content"
-          >
-            Inscriere tabara urbana
-          </a>
           <Link href="/contact" className="btn btn-primary">
             Contact
           </Link>

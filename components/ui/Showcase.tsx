@@ -15,6 +15,7 @@ import { Modal, ModalBody, ModalContent, ModalFooter } from "./animated-modal";
 
 import Image from "next/image";
 import Link from "next/link";
+import EnlargingImage from "./enlargingImage";
 
 export default function Showcase() {
   return (
@@ -112,14 +113,13 @@ export default function Showcase() {
                           style={{
                             rotate: Math.random() * 20 - 10 + "deg",
                           }}
-                          className="rounded-xl -mr-4 mt-4 p-1  flex-shrink-0 overflow-hidden hover:scale-[200%] transition-transform hover:z-[999]"
+                          className="rounded-xl -mr-4 mt-4 p-1 flex-shrink-0 overflow-hidden hover:-translate-y-1 transition-all "
                         >
-                          <Image
+                          <EnlargingImage
                             src={`/${item.base}${idx + 1}.jpeg`}
                             alt="imagine"
-                            width="500"
-                            height="500"
-                            className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0 border-2 border-base-content "
+                            key={idx + ""}
+                            id={idx + ""}
                           />
                         </div>
                       ))}
@@ -135,7 +135,7 @@ export default function Showcase() {
                     </p>
                   </div>
                 </ModalContent>
-                <ModalFooter className="flex justify-center flex-row pb-2 pt-2 bg-inherit gap-2">
+                <ModalFooter className="flex !bg-white justify-center flex-row pb-2 pt-2 bg-inherit gap-2">
                   {item.base === "biblio" ? (
                     <Link
                       href="/tabara-urbana-astra/inscriere"
@@ -176,7 +176,7 @@ const items = [
     imagini: 0,
     text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
     className:
-      "col-span-1 bg-gradient-to-r from-primary to-secondary border-none",
+      "col-span-1 bg-gradient-to-r from-primary to-secondary border-none text-secondary-content",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
@@ -192,7 +192,7 @@ const items = [
     imagini: 4,
     text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
     className:
-      "col-span-1 bg-gradient-to-r from-secondary to-accent border-none",
+      "col-span-1 bg-gradient-to-r from-secondary to-accent border-none text-secondary-content",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
   {
@@ -207,7 +207,8 @@ const items = [
     ),
     imagini: 0,
     text: "Mascotele Minnie și Mickey Mouse sunt iconice și aduc instantaneu un sentiment de bucurie și entuziasm la orice ocazie. Fie că este vorba de petreceri de aniversare, evenimente școlare sau alte festivități, prezența acestor personaje îndrăgite asigură o atmosferă magică și distractivă. Mai ales acompaniate de musica si dans!",
-    className: "col-span-1 bg-gradient-to-r from-accent to-primary border-none",
+    className:
+      "col-span-1 bg-gradient-to-r from-accent to-primary border-none text-secondary-content ",
     icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
   },
 
@@ -216,7 +217,7 @@ const items = [
     base: "jocuri",
     description: "300 lei / ora / 1 animator",
     text: "Specialiștii noștri în jocuri stabilesc legături între copii, îi învăța lucrul în echipă și bunele maniere, creând spațiul pentru prietenie. Un animator gestionează perfect un număr de 15 copii. Putem conduce jocuri cu orice număr de copii. Chiar si peste 100.",
-    className: "row-span-2 bg-accent",
+    className: "row-span-2 bg-accent text-secondary-content",
     imagini: 1,
     header: (
       <Skeleton>
@@ -237,7 +238,8 @@ const items = [
       </Skeleton>
     ),
     imagini: 4,
-    className: "bg-secondary text-secondary-content border-0 col-span-2",
+    className:
+      "bg-secondary text-secondary-content border-0 col-span-2 text-secondary-content",
     icon: <IconConfetti className="h-4 w-4 text-secondary-content" />,
     data: [],
   },
@@ -253,7 +255,7 @@ const items = [
     imagini: 0,
     text: "Atelierele creative pentru copii sunt concepute pentru a oferi o experiență educativă și distractivă, în care cei mici pot să își exprime imaginația și să își dezvolte abilitățile artistice si motrice. Fiecare atelier este structurat pentru a încuraja explorarea, învățarea și dezvoltarea personală într-un mediu sigur și prietenos.",
     data: [],
-    className: "col-span-2 bg-primary",
-    icon: <IconConfetti className="h-4 w-4 text-primary-content" />,
+    className: "col-span-2 bg-primary text-secondary-content",
+    icon: <IconConfetti className="h-4 w-4 text-secondary-content" />,
   },
 ];
